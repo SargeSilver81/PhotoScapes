@@ -1,20 +1,70 @@
 .clear-filter[filter-color="blue"] {
-    background: rgba(4, 1, 56, 0.9);
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(90deg, rgba(54, 54, 58, 0.1), rgba(4, 1, 56, 0.98));
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(90deg, rgba(54, 54, 58, 0.1), rgba(4, 1, 56, 0.98));
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, rgba(54, 54, 58, 0.1), rgba(4, 1, 56, 0.98));
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(0deg, rgba(54, 54, 58, 0.1), rgba(4, 1, 56, 0.95));
-    /* Standard syntax */
-  }
+   background: rgba(4, 1, 56, 0.9);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(90deg, rgba(54, 54, 58, 0.1), rgba(4, 1, 56, 0.98));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(90deg, rgba(54, 54, 58, 0.1), rgba(4, 1, 56, 0.98));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(90deg, rgba(54, 54, 58, 0.1), rgba(4, 1, 56, 0.98));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, rgba(54, 54, 58, 0.1), rgba(4, 1, 56, 0.95));
+  /* Standard syntax */
+}
 
-  [data-background-color="blue"] {
-    background-color: #030852;
-  }
+[data-background-color="blue"] {
+  background-color: #030852;
+}
 
-  .bg-primary {
-    background-color: #030852 !important;
-  }
+.sidebar-collapse .navbar-collapse:before {
+  background: #030852;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#030852 0%, #000 80%);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#030852 0%, #000 80%);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#030852 0%, #000 80%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#030852 0%, #000 80%);
+  /* Standard syntax (must be last) */
+  opacity: 0.76;
+  filter: alpha(opacity=76);
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-primary {
+  background-color: #030852 !important;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio h1 {
+    font-family: 'Indie Flower','Pacifico', cursive;
+    font-size: 3em;
+    color: #333399;
+    text-align: center;
+    text-shadow: 2px 2px 3px #888; 
+}
+
+.portfolio img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;
+    box-shadow: 4px 4px 5px #888;
+}
+
+img:hover {
+    transform: scale(1.1);
+    
+}
