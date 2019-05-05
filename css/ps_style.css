@@ -64,7 +64,7 @@
     box-shadow: 4px 4px 5px #888;
 }
 
-img:hover {
+.portfolio img:hover {
     transform: scale(1.1);
     
 }
